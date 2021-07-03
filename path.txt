@@ -1,0 +1,22 @@
+PATH=
+C:\Windows\system32;
+C:\Windows;
+C:\Windows\System32\Wbem;
+C:\Windows\System32\WindowsPowerShell\v1.0\;
+C:\Windows\System32\OpenSSH\;
+C:\ProgramData\chocolatey\bin;
+C:\tools\php80;
+C:\ProgramData\ComposerSetup\bin;
+C:\Program Files\Git\cmd;
+C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;
+C:\Windows\system32;
+C:\Windows;
+C:\Windows\System32\Wbem;
+C:\Windows\System32\WindowsPowerShell\v1.0\;
+C:\Windows\System32\OpenSSH\;
+C:\ProgramData\chocolatey\bin;
+C:\xampp\php;
+C:\ProgramData\ComposerSetup\bin;
+C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;
+C:\Users\CH-PC-UJ\AppData\Local\Microsoft\WindowsApps;
+C:\Users\CH-PC-UJ\AppData\Roaming\Composer\vendor\bin;
