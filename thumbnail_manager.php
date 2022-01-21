@@ -1,5 +1,7 @@
 <?php
 
+$DEBUG = false;
+
 function test_all_posters(){
     $movies = [
 	"ALIVE.2020.KOREAN.1080p.WEBRip.AAC2.0.x264-NOGRP",
@@ -53,6 +55,7 @@ function test_all_posters(){
 
 function get_movie_poster($movie_folder){
     $thumbnail_path = "stream_videos/". $movie_folder ."/medium-poster.jpg";
+    // return $thumbnail_path;
     if(!file_exists($thumbnail_path)) { 
 	$thumbnail_path = get_yts_movie_poster($movie_folder);
 	if(!@file_get_contents($thumbnail_path)){
@@ -140,12 +143,13 @@ function search_wiki($search){
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $output = curl_exec($ch);
     if(!$output){
-	if($DEBUG) {
-	    $info = curl_info($output);
-	    echo "<pre>";
-	    var_dump($info);
-	    echo "</pre>";
-	}
+	/* if($DEBUG) { 
+	   $info = curl_info($output);
+	   echo "<pre>";
+	   var_dump($info);
+	   echo "</pre>";
+	   } */
+	return false;
     }
     curl_close($ch);
     $json_res = json_decode($output, true);
